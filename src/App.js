@@ -11,7 +11,7 @@ function App() {
       <main>
         <section className="about">
           <h2>Sobre mim</h2>
-          <p>Camila Patricio é uma psicóloga especializada em ...</p>
+          <p>Camila Patrício é uma psicóloga especializada em ...</p>
         </section>
         <Carrossel />
       </main>
