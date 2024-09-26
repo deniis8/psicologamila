@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Carrossel from './components/Carrossel';
+import Footer from './components/Footer';
+import './styles/styles.css'; // Arquivo de estilização separado
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <main>
+        <section className="about">
+          <h2>Sobre mim</h2>
+          <p>Camila Patricio é uma psicóloga especializada em ...</p>
+        </section>
+        <Carrossel />
+      </main>
+      <Footer />
     </div>
   );
 }

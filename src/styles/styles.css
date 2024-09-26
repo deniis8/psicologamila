@@ -1,0 +1,134 @@
+/* Geral */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body tenha no mínimo 100% da altura da viewport */
+  }
+  
+  .App {
+    flex: 1; /* Faz o conteúdo ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background-color: #8f4db0;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .carousel {
+    margin: 20px 0;
+  }
+  
+  .carousel-items {
+    display: flex;
+    overflow-x: scroll;
+  }
+  
+  .carousel-item {
+    min-width: 300px;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: left; /* Alinha o bloco de conteúdo do footer à esquerda */
+    padding: 10px 20px;
+    margin-top: auto;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o texto dentro dos itens da lista */
+  }
+  
+  footer a {
+    color: #c4a2d7;
+    text-decoration: none;
+    text-align: center; /* Centraliza o texto do link */
+  }
+  
+  footer p {
+    text-align: center; /* Centraliza o texto do parágrafo */
+  }
+  
+  
+  /* Estilos para centralizar o carrossel */
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px; /* Define a altura do carrossel */
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .carousel-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-item {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 10px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Animação para o texto aparecer suavemente */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
